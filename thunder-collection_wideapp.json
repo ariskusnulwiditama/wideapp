@@ -1,0 +1,69 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "wideapp",
+    "collectionId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
+    "dateExported": "2024-08-05T18:59:21.650Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "6f843e1b-e6e2-49a1-ab2f-d58addbd2af5",
+            "colId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
+            "containerId": "",
+            "name": "save product",
+            "url": "http://localhost:8080/api/products",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-08-05T18:55:53.703Z",
+            "modified": "2024-08-05T18:56:43.127Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"holo\",\n  \"type\": \"jojo\",\n  \"price\": 120.00,\n  \"description\": \"ini adalah test\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "2f7803d0-ee79-4111-b532-4eb48c11f0b9",
+            "colId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
+            "containerId": "",
+            "name": "save order",
+            "url": "http://localhost:8080/api/products",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-08-05T18:56:24.566Z",
+            "modified": "2024-08-05T18:56:24.566Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"holo\",\n  \"type\": \"jojo\",\n  \"price\": 120.00,\n  \"description\": \"ini adalah test\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "d9760a66-e60e-4253-ab5c-306acb1346ef",
+            "colId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
+            "containerId": "",
+            "name": "show all products",
+            "url": "http://localhost:8080/api/products",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-08-05T18:58:15.837Z",
+            "modified": "2024-08-05T18:58:15.837Z",
+            "headers": []
+        },
+        {
+            "_id": "5f7bda27-0b4a-4c74-800c-de73bd720e61",
+            "colId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
+            "containerId": "",
+            "name": "show all orders",
+            "url": "http://localhost:8080/api/orders",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-08-05T18:59:08.928Z",
+            "modified": "2024-08-05T18:59:08.928Z",
+            "headers": []
+        }
+    ],
+    "ref": "3IOcySORJ6q7UdMyXYCp2yyBOXqr8oHDXLpqnP60XDD4uZPFWDQfiQrDPw0_PADIXxDQtGYBkMHNjZyxOnhfyg"
+}
