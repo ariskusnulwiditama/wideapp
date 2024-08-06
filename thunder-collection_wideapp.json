@@ -2,7 +2,7 @@
     "clientName": "Thunder Client",
     "collectionName": "wideapp",
     "collectionId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
-    "dateExported": "2024-08-05T18:59:21.650Z",
+    "dateExported": "2024-08-06T13:26:03.434Z",
     "version": "1.2",
     "folders": [],
     "requests": [
@@ -28,15 +28,15 @@
             "colId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
             "containerId": "",
             "name": "save order",
-            "url": "http://localhost:8080/api/products",
+            "url": "http://localhost:8080/api/orders",
             "method": "POST",
             "sortNum": 20000,
             "created": "2024-08-05T18:56:24.566Z",
-            "modified": "2024-08-05T18:56:24.566Z",
+            "modified": "2024-08-06T13:25:34.129Z",
             "headers": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"holo\",\n  \"type\": \"jojo\",\n  \"price\": 120.00,\n  \"description\": \"ini adalah test\"\n}",
+                "raw": "{\n    \"customerName\": \"John Doe\",\n    \"status\": \"Pending\",\n    \"items\": [\n        {\n            \"productId\": 1,\n            \"quantity\": 2\n        },\n        {\n            \"productId\": 1,\n            \"quantity\": 3\n        }\n    ]\n}",
                 "form": []
             }
         },
@@ -63,7 +63,31 @@
             "created": "2024-08-05T18:59:08.928Z",
             "modified": "2024-08-05T18:59:08.928Z",
             "headers": []
+        },
+        {
+            "_id": "4c307206-ff20-4bb0-9c94-a3d3e07dedc5",
+            "colId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
+            "containerId": "",
+            "name": "delete order",
+            "url": "http://localhost:8080/api/orders/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-08-06T13:22:53.616Z",
+            "modified": "2024-08-06T13:22:53.616Z",
+            "headers": []
+        },
+        {
+            "_id": "9cc1879d-55bd-4825-aea3-5ae496fb37e5",
+            "colId": "9b48ce7b-2433-4068-b192-8c04a0fbe115",
+            "containerId": "",
+            "name": "update order",
+            "url": "http://localhost:8080/api/orders/1",
+            "method": "PUT",
+            "sortNum": 60000,
+            "created": "2024-08-06T13:23:49.809Z",
+            "modified": "2024-08-06T13:23:49.809Z",
+            "headers": []
         }
     ],
-    "ref": "3IOcySORJ6q7UdMyXYCp2yyBOXqr8oHDXLpqnP60XDD4uZPFWDQfiQrDPw0_PADIXxDQtGYBkMHNjZyxOnhfyg"
+    "ref": "3IOcySORJ6q7UdMyXYCp2-Ra0BxIwyTKJpxIA1JgE_Czpe-iPKfbDWI8bSMfTO29CKl1O6ELx7aD462YE-gdiw"
 }
