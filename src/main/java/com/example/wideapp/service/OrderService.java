@@ -42,6 +42,20 @@ public class OrderService {
         return orderRepository.findById(id);
     }
 
+    public Order updateOrder(Long id, Order order) {
+        return orderRepository.findById(id).map(ord -> {
+            ord.setCustomerName(order.getCustomerName());
+            ord.setStatus(order.getStatus());
+            ord.setItems(order.getItems());
+            ord.setTotal(calculateTotal(order));
+            return orderRepository.save(ord);
+        }).orElseThrow(() -> new IllegalArgumentException("Order with ID " + id + " does not exist"));
+    }
+
+    public void deleteOrder(Long id) {
+        orderRepository.deleteById(id);
+    }
+
     private double calculateTotal(Order order) {
         return order.getItems().stream()
             .mapToDouble(item -> {
